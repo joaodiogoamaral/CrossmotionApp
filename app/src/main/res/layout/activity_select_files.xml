@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_select_files">
+
+
+    <TextView
+        android:id="@+id/selectVideoMsg"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#03A9F4"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/title_select_files_upload"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fileList"
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:background="@color/dark_grey"
+        android:onClick="uploadVideos" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:onClick="uploadVideos"
+        android:text="@string/upload_videos"
+        android:textColor="@color/colorPrimary"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/back2MainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:onClick="backToMainMenu"
+        android:text="@string/back2Main"
+        android:textColor="@color/colorPrimary"
+        android:visibility="visible" />
+
+</LinearLayout>

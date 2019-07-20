@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+            <certificates src="@raw/cacert_crossfit" />
+            <domain includeSubdomains="true">192.168.0.100:8000</domain>
+        </trust-anchors>
+    </debug-overrides>
+<!--
+    <domain-config>
+
+        <domain includeSubdomains="true">192.168.0.107:8000</domain>
+
+
+
+    </domain-config>-->
+</network-security-config>
